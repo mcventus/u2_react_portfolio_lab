@@ -25,7 +25,7 @@ html{
 /* section */
 section{
   padding: 10rem 0;
-  background: #eff4ff;
+  background: #ffffff;
   transition: all ease-in-out 250ms;
 }
 section:nth-child(even){
@@ -34,6 +34,7 @@ section:nth-child(even){
 a{
   color: white;
   transition: all ease-in-out 250ms;
+  margin: 0 auto;
 }
 
 /* direct children of section */
@@ -80,7 +81,7 @@ h6{
   color:whitesmoke;
   padding: 0.6rem 2.5rem;
   border: 2px solid transparent;
-  border-radius: 5%;
+  border-radius: 1%;
   cursor: pointer;
 }
 .btn:hover{
@@ -90,21 +91,21 @@ h6{
 
 }
 /* btn */
-.btn.white{
+/* .btn.white{
   background: whitesmoke;
 }
 .btn.white:hover{
   background: transparent;
   border-color: whitesmoke;
-}
+} */
 .btn.primary{
   background: #000b1c;
   border-color: transparent;
-  color: #a6b5cc;
+  color:whitesmoke;
 }
-.btn.sm{
+/* .btn.sm{
   padding: 0.5rem 1.2rem;
-}
+} */
 
 /* tablets */
 @media screen and (max-width: 1024px) {

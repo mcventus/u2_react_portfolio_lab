@@ -51,7 +51,7 @@ effect above the nav links when hovering*/
 /* mobile phones*/
 @media screen and (max-width: 600px) {
   .dropdown-btn {
-    margin-right: 1.9rem;
+    margin-right: 0.9rem;
     background-color: transparent;
     display: block;
     cursor: pointer;
@@ -60,7 +60,7 @@ effect above the nav links when hovering*/
 
   .nav-elements {
     position: absolute;
-    right: 0.7rem;
+    right: 0.4rem;
     top: 40px;
     background-color: #282c34;
     width: 0px;
@@ -71,9 +71,9 @@ effect above the nav links when hovering*/
 
   .nav-elements.active {
     width: 80px;
-    background-color: rgb(154, 154, 153);
-    border-radius: 7%;
-    border:1px solid rgb(0, 0, 0);
+    background-color: rgb(151, 151, 151);
+    border-radius: 1%;
+    border:transparent;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
@@ -86,8 +86,9 @@ effect above the nav links when hovering*/
     flex-direction: column;
     justify-content: space-around;
     margin-top: 0.25rem;
+    left: -20px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: 10px;
   }
   #link::before{
@@ -97,6 +98,9 @@ effect above the nav links when hovering*/
     width:0%;
   }
   #link:hover{
+    color: #080500;
+  }
+  #link:focus{
     color: #080500;
   }
 }

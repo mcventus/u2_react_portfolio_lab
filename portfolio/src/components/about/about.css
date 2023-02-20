@@ -9,9 +9,20 @@
     grid-template-columns: repeat (3, 1fr);
     gap: 1.5rem;
 }
+article.card{
+    width: 50%;
+    margin: 0 auto;
+    background: #282c34;
+    border-radius: 1%;
+    color:whitesmoke;
+    
+}
+article.card h5{
+    color:whitesmoke;
+}
 .about__card-icon{
     font-size: 1.3rem;
-    color: black;
+    color:whitesmoke;
     border-radius: 10%;
     width: fit-content;
     margin-inline: auto;
@@ -20,9 +31,9 @@
     align-items: center;
     transition: all ease-in-out 250ms;
 }
-.card.about__card:hover .about__card-icon{
-    background: #111d2e;
-    color: white;
+.about__card-icon:hover, article.card:hover, article.card h5:hover{
+    background:#454c5a;
+    
 }
 .card.about__card h5{
     margin: 1rem 0;
@@ -44,6 +55,9 @@
     }
     .about h2{
         text-align: center;
+    }
+    article.card{
+        width: 100%;
     }
 }
 
