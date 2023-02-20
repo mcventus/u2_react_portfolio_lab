@@ -1,19 +1,29 @@
 /*
 Header
 */
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span{
+  color:rgb(164, 93, 0);
+}
+ /* mobile phones*/
+@media screen and (max-width: 600px) {
   .header-text{
-    margin-top: 20%;
+    margin-top: 35%;
     font-size: 30px;
+    margin-bottom: 60px;
   }
-  .header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-  }
-  .header-text h1 span{
-    color:rgb(164, 93, 0);
-  }
-  header::after{
-    content: '';
-    display: table;
-    clear: both;
-  }
+}
