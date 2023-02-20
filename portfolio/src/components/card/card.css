@@ -1,0 +1,25 @@
+.card{
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 17%;
+    transition: all ease-in-out 250ms;
+}
+.card:hover{
+    background: transparent;
+    border-color: whitesmoke;
+    transform: translateY(-0.5rem);
+}
+.card.light{
+    background: whitesmoke;
+}
+.card.light:hover{
+    background: transparent;
+    border-color: whitesmoke;
+}
+/* media queries (phones ) */
+@media screen and (max-width: 600px) {
+    .card{
+        padding: 1.2rem;
+    }
+}

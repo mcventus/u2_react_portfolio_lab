@@ -1,0 +1,51 @@
+/*header after fix the problem as the container
+sizes to zero*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: wrap;
+  }
+  .logo{
+    
+  }
+  
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+  }
+  #link{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  } 
+  #link:hover{
+    color: #dfdddd;
+  }
+  /* creating a pseudo element to bring the dash 
+  effect above the nav links when hovering*/
+  #link::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #dfdddd;
+    position: absolute;
+    top: -20px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  #link:hover::before{
+    width:100%;
+  }
+  
+  
+  
+  

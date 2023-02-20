@@ -1,7 +1,7 @@
-import Home from './Home';
-import About from './About';
-import Contact from'./Contact';
-import Projects from './Projects';
+import Home from '../home/Home';
+import About from '../about/About';
+import Contact from'../contact/Contact';
+import Projects from '../projects/Projects';
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Main = () => {
         <div className="main">
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="" element={<About/>}/>
+                <Route exact path="/about" element={<About/>}/>
                 <Route/>
             </Routes>
 

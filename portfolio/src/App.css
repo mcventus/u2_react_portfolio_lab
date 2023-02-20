@@ -5,130 +5,149 @@
 .App-header{
   background-color: #282c34;
 }
-/* .container{
-  margin: 0;
-  width: 100%;
-  background-color: #282c34;
-  color: whitesmoke;
-  /* font-family: none; */
-  /* font-weight: 600;
-} */ 
-
-.container{
-  padding: 10px 10%;
+html{
+  scroll-behavior: smooth;
 }
-/*header after fix the problem as the container
-sizes to zero*/
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: wrap;
-}
-.logo{
-  
-}
-header::after{
-  content: '';
-  display: table;
-  clear: both;
-}
-nav ul{
+* {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
   list-style: none;
-}
-nav ul li{
-  display: inline-block;
-  margin: 10px 20px;
-  position: relative;
-}
-#link{
-  color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-} 
-#link:hover{
-  color: #dfdddd;
+  box-sizing: border-box;
 }
-/* creating a pseudo element to bring the dash 
-effect above the nav links when hovering*/
-#link::before{
-  content: '';
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #dfdddd;
-  position: absolute;
-  top: -20px;
-  width: 0%;
+.container{
+  width: 90%;
+  margin-inline: auto;
+  max-width: 1920px;
+}
+/* section */
+section{
+  padding: 10rem 0;
+  background: #282c34;
   transition: all ease-in-out 250ms;
 }
-#link:hover::before{
-  width:100%;
+section:nth-child(even){
+  background: white;
+}
+a{
+  color: white;
+  transition: all ease-in-out 250ms;
 }
 
-/*
-Header
-*/
-/* .main{
-  width: 100%;
-  height: 100vh;
-  background-color:black;
-  background-size: cover;
-  background-position: center;
-} */
-
-.header-text{
-  margin-top: 20%;
-  font-size: 30px;
+/* direct children of section */
+section > h2{
+  text-align: center;
 }
-.header-text h1{
-  font-size: 60px;
-  margin-top: 20px;
-}
-.header-text h1 span{
-  color:rgb(164, 93, 0);
+section > p{
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
 }
 
-/*a
- *b
- *o
- *u
- *t 
- */
- 
-.about{
-  padding: 80px 0;
-  color: #dfdddd;
+/* heading */
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.1;
+  color: black;
 }
-.row{
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.6rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+h5{
+  font-size: 0.95rem;
+}
+h6{
+  font-size: 0.8rem;
+}
+/* button */
+.btn{
+  display: inline-block;
+  width: fit-content;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.about-col-1{
-  flex-basis: 35%;
-}
-.about-col-img{
-  width: 100%;
-  border-radius: 15px;
-}
-.about-col-1{
-  flex-basis: 60%;
-}
-.sub{
-  font-size: 60px;
-  font-weight: 600;
-}
-.tab-titles{
-  display:flex;
-  margin: 20px 0 40px;
-}
-.tab-links{
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
+  align-items: center;
+  gap: 1rem;
+  background: #545d6d;
+  color:whitesmoke;
+  padding: 0.6rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 5%;
   cursor: pointer;
-  position: relative;
 }
+.btn:hover{
+  background-color: transparent;
+  border-color: #545d6d;
+  transform: translateY(-0.5rem);
+
+}
+/* btn */
+.btn.white{
+  background: whitesmoke;
+}
+.btn.white:hover{
+  background: transparent;
+  border-color: whitesmoke;
+}
+.btn.primary{
+  background: #000b1c;
+  border-color: transparent;
+  color: #a6b5cc;
+}
+.btn.sm{
+  padding: 0.5rem 1.2rem;
+}
+
+/* tablets */
+@media screen and (max-width: 1024px) {
+  body{
+      font-size: 1rem;
+  }
+  .contianer{
+      width: 90%;
+  }
+  section{
+      padding: 8rem 0;
+  }
+  section > p {
+      width: 72%;
+      margin-bottom: 3rem;
+  }
+  h1{
+      font-size: 2rem;
+  }
+  
+}
+
+/* mobile phones*/
+@media screen and (max-width: 600px) {
+  h1{
+      font-size: 2.4rem;
+  }
+  h2{
+      font-size: 1.8rem;
+  }
+  h3{
+      font-size: 1.4rem;
+  }
+  h4{
+      font-size: 1rem;
+  }
+  .btn{
+      padding: 0.6rem 1.5rem;
+  }
+  section > p{
+      width: 90%;
+  }
+  
+}
+
+

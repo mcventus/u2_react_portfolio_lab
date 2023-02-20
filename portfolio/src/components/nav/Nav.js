@@ -1,4 +1,5 @@
-import logo4 from '../logo4.png';
+import logo4 from './logo4.png';
+import './nav.css'
 import { Link } from 'react-router-dom';
 
 const Nav = () =>{
@@ -13,7 +14,7 @@ const Nav = () =>{
                     <li><Link id="link" to="/projects">Projects</Link></li>
                 </ul>
            </nav>
-           <div class="header-text">
+           <div className="header-text">
                 <p>Full Stack Software Engineer</p>
                 <h1>Hi, I'm <span>Mcventus</span><br/>a Software Engineer</h1>
            </div>
