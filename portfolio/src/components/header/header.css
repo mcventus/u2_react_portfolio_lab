@@ -1,13 +1,6 @@
 /*
 Header
 */
-.main{
-    margin: auto;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  } 
   .header-text{
     margin-top: 20%;
     font-size: 30px;

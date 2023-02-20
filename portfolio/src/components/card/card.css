@@ -17,7 +17,7 @@
     background: transparent;
     border-color: whitesmoke;
 }
-/* media queries (phones ) */
+/* mobile */
 @media screen and (max-width: 600px) {
     .card{
         padding: 1.2rem;

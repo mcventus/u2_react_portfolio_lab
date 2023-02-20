@@ -38,7 +38,7 @@ nav{
     width: 100%;
     background-color: #dfdddd;
     position: absolute;
-    top: -20px;
+    top: -10px;
     width: 0%;
     transition: all ease-in-out 250ms;
   }

@@ -16,44 +16,44 @@
     width: fit-content;
     margin-inline: auto;
     padding: 0.6rem;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     transition: all ease-in-out 250ms;
 }
 .card.about__card:hover .about__card-icon{
-    background: #000b1c;
+    background: #111d2e;
     color: white;
 }
 .card.about__card h5{
     margin: 1rem 0;
 }
-.about__ p{
+.about p{
     margin-bottom: 0.8rem;
 }
-.about__ .btn{
+.about .btn{
     margin-top: 2.5rem;
 }
-.about__ h2 {
+.about h2 {
     text-align: center;
 }
 
-/* media queries (tablets) */
+/* tablets */
 @media  screen and (max-width: 1024px) {
     .about__container{
         grid-template-columns: 1fr;
     }
-    .about__ h2{
+    .about h2{
         text-align: center;
     }
 }
 
-/* media queries (mobile and tablets) */
+/* mobile */
 @media  screen and (max-width: 600px) {
     .about__cards{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    .about__ .btn{
+    .about .btn{
         margin-top: 2rem;
     }
 }

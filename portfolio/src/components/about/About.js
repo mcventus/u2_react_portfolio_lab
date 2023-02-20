@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../App.css';
 import './about.css';
 import Resume from './resume.pdf'
 import { FiDownload } from 'react-icons/fi'
